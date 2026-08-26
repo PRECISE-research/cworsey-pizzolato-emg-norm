@@ -1,0 +1,29 @@
+{
+  "version": "gain_calibrated_v1",
+  "input_unit": "mV",
+  "sensor": "Cometa MiniWave",
+  "sensor_gain": 1000.0,
+  "vicon_source_gain_default": 5.0,
+  "vicon_source_gain_overrides": {
+    "C01": {
+      "r_vasmed": 10.0
+    },
+    "C02": {
+      "r_vasmed": 10.0
+    },
+    "C03": {
+      "r_vasmed": 10.0
+    },
+    "C04": {
+      "r_vasmed": 10.0
+    },
+    "C05": {
+      "r_vasmed": 10.0
+    },
+    "C07": {
+      "l_vasmed": 10.0
+    }
+  },
+  "formula": "input_mV = stored_mot_V * 1000 / sensor_gain",
+  "assumption": "Vicon Nexus SourceGain was already applied before .mot export"
+}

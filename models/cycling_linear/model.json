@@ -1,0 +1,306 @@
+{
+  "metadata": {
+    "name": "cycling-cohort side-pooled linear EMG amplitude models",
+    "version": "1.0.0",
+    "participants": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07"
+    ],
+    "model_scope": "side_pooled_anatomical_muscle",
+    "input_unit": "input_referred_mV",
+    "feature_units": {
+      "variance_mV2": "mV^2",
+      "kde_fwhm_mV": "mV"
+    },
+    "target": "reference-normalised envelope at window centre",
+    "output_bounds": [
+      0.0,
+      1.0
+    ],
+    "training_trials": "17 cycling conditions plus three cycling-cohort CMJ trials",
+    "external_dataset_in_training": false,
+    "post_processing": "trial peak scales conventional 6-Hz envelope",
+    "prediction_floor_subtraction": false,
+    "conventional_envelope_floor_subtraction": false
+  },
+  "models": {
+    "add": {
+      "type": "standardised_linear_least_squares",
+      "muscle": "add",
+      "feature_names": [
+        "variance_mV2",
+        "kde_fwhm_mV"
+      ],
+      "feature_mean": [
+        0.0009178143185954031,
+        0.0381151278605882
+      ],
+      "feature_sd": [
+        0.005326419240822694,
+        0.053046699779027644
+      ],
+      "intercept": 0.07058181843764026,
+      "coefficients": [
+        -0.0005957322933623013,
+        0.08803766788757608
+      ]
+    },
+    "bflh": {
+      "type": "standardised_linear_least_squares",
+      "muscle": "bflh",
+      "feature_names": [
+        "variance_mV2",
+        "kde_fwhm_mV"
+      ],
+      "feature_mean": [
+        0.002205455009532701,
+        0.042631297420607006
+      ],
+      "feature_sd": [
+        0.011171563224413233,
+        0.0824161884973095
+      ],
+      "intercept": 0.05929547911368152,
+      "coefficients": [
+        -0.029290134462646958,
+        0.12134165468212527
+      ]
+    },
+    "glmax": {
+      "type": "standardised_linear_least_squares",
+      "muscle": "glmax",
+      "feature_names": [
+        "variance_mV2",
+        "kde_fwhm_mV"
+      ],
+      "feature_mean": [
+        0.00046041724586162465,
+        0.018669054218721476
+      ],
+      "feature_sd": [
+        0.0032836780894918293,
+        0.04111624936443078
+      ],
+      "intercept": 0.04355413266744273,
+      "coefficients": [
+        -0.02270161086003985,
+        0.09475457313262611
+      ]
+    },
+    "glmed": {
+      "type": "standardised_linear_least_squares",
+      "muscle": "glmed",
+      "feature_names": [
+        "variance_mV2",
+        "kde_fwhm_mV"
+      ],
+      "feature_mean": [
+        0.0014483277771530716,
+        0.029908363999504528
+      ],
+      "feature_sd": [
+        0.013146685485496044,
+        0.06909898547763221
+      ],
+      "intercept": 0.05207991294077646,
+      "coefficients": [
+        -0.05407369784628258,
+        0.10765902743629505
+      ]
+    },
+    "latgas": {
+      "type": "standardised_linear_least_squares",
+      "muscle": "latgas",
+      "feature_names": [
+        "variance_mV2",
+        "kde_fwhm_mV"
+      ],
+      "feature_mean": [
+        0.0040523066198620466,
+        0.06141031142410631
+      ],
+      "feature_sd": [
+        0.016868362947759914,
+        0.10285272532185635
+      ],
+      "intercept": 0.06865746142000173,
+      "coefficients": [
+        -0.020323651869345226,
+        0.11574926489677473
+      ]
+    },
+    "medgas": {
+      "type": "standardised_linear_least_squares",
+      "muscle": "medgas",
+      "feature_names": [
+        "variance_mV2",
+        "kde_fwhm_mV"
+      ],
+      "feature_mean": [
+        0.004890190956172356,
+        0.06925827407547795
+      ],
+      "feature_sd": [
+        0.015385434671769933,
+        0.10480648230356661
+      ],
+      "intercept": 0.07947297108302408,
+      "coefficients": [
+        0.010097591765987665,
+        0.10175111699397849
+      ]
+    },
+    "recfem": {
+      "type": "standardised_linear_least_squares",
+      "muscle": "recfem",
+      "feature_names": [
+        "variance_mV2",
+        "kde_fwhm_mV"
+      ],
+      "feature_mean": [
+        0.006387880671244239,
+        0.06411959446016753
+      ],
+      "feature_sd": [
+        0.03375180971795034,
+        0.13738982901270105
+      ],
+      "intercept": 0.05022650329551872,
+      "coefficients": [
+        -0.02115624301926841,
+        0.11071176296619716
+      ]
+    },
+    "semiten": {
+      "type": "standardised_linear_least_squares",
+      "muscle": "semiten",
+      "feature_names": [
+        "variance_mV2",
+        "kde_fwhm_mV"
+      ],
+      "feature_mean": [
+        0.005331575716863134,
+        0.05947424213416913
+      ],
+      "feature_sd": [
+        0.03166682910679362,
+        0.12780872139555757
+      ],
+      "intercept": 0.058535135660402825,
+      "coefficients": [
+        -0.04501419478454241,
+        0.1320073541123144
+      ]
+    },
+    "soleus": {
+      "type": "standardised_linear_least_squares",
+      "muscle": "soleus",
+      "feature_names": [
+        "variance_mV2",
+        "kde_fwhm_mV"
+      ],
+      "feature_mean": [
+        0.007693851854273021,
+        0.07067215905007634
+      ],
+      "feature_sd": [
+        0.04440256605651632,
+        0.14133351508493688
+      ],
+      "intercept": 0.049477278431808575,
+      "coefficients": [
+        -0.02037399342003797,
+        0.09398695549210878
+      ]
+    },
+    "tfl": {
+      "type": "standardised_linear_least_squares",
+      "muscle": "tfl",
+      "feature_names": [
+        "variance_mV2",
+        "kde_fwhm_mV"
+      ],
+      "feature_mean": [
+        0.003760865107524182,
+        0.048596384301958506
+      ],
+      "feature_sd": [
+        0.03201709928519999,
+        0.1176904504231606
+      ],
+      "intercept": 0.049947088514675005,
+      "coefficients": [
+        -0.03991549621578788,
+        0.10095222364268452
+      ]
+    },
+    "tibant": {
+      "type": "standardised_linear_least_squares",
+      "muscle": "tibant",
+      "feature_names": [
+        "variance_mV2",
+        "kde_fwhm_mV"
+      ],
+      "feature_mean": [
+        0.00373937930786818,
+        0.053893476880480976
+      ],
+      "feature_sd": [
+        0.014607361711637729,
+        0.08966513458713417
+      ],
+      "intercept": 0.06016633936579655,
+      "coefficients": [
+        0.009289897340558826,
+        0.08736465006420258
+      ]
+    },
+    "vaslat": {
+      "type": "standardised_linear_least_squares",
+      "muscle": "vaslat",
+      "feature_names": [
+        "variance_mV2",
+        "kde_fwhm_mV"
+      ],
+      "feature_mean": [
+        0.01092508073466048,
+        0.08157676771896732
+      ],
+      "feature_sd": [
+        0.055998350352070306,
+        0.2034339357767911
+      ],
+      "intercept": 0.04413683244972168,
+      "coefficients": [
+        -0.014832256392818835,
+        0.10058777749946853
+      ]
+    },
+    "vasmed": {
+      "type": "standardised_linear_least_squares",
+      "muscle": "vasmed",
+      "feature_names": [
+        "variance_mV2",
+        "kde_fwhm_mV"
+      ],
+      "feature_mean": [
+        0.010492815002862131,
+        0.07975561759192748
+      ],
+      "feature_sd": [
+        0.052721144714306126,
+        0.18873577800446234
+      ],
+      "intercept": 0.04284123225234319,
+      "coefficients": [
+        -0.005875654246866882,
+        0.09143120003617237
+      ]
+    }
+  }
+}

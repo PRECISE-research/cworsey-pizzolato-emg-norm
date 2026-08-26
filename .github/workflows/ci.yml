@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - run: git lfs pull --include="examples/full_trial_data/**"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -e ".[dev]"
+      - run: pytest
+      - run: python examples/quick_start.py
+      - run: >-
+          python examples/predict_own_emg.py
+          examples/full_trial_data/C06/trial_ffc10db23f/emgBPF.mot
+          outputs/own_data_prediction.csv
+          --amplifier-gain 1000
+      - run: python examples/compare_prediction_modes.py
+      - run: ruff check src tests examples
+      - run: mkdocs build --strict

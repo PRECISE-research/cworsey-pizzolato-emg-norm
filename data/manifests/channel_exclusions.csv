@@ -1,0 +1,6 @@
+participant,channel,scope,reason
+C01,r_add,training_and_evaluation,manual signal-quality audit
+C03,r_add,training_and_evaluation,manual signal-quality audit
+C04,r_add,training_and_evaluation,manual signal-quality audit
+C05,r_add,training_and_evaluation,manual signal-quality audit
+C07,l_add,training_and_evaluation,manual signal-quality audit

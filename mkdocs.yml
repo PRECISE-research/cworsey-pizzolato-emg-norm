@@ -1,0 +1,36 @@
+site_name: Carrall-Worsey-Pizzolato EMG normalisation
+site_description: API and reproducibility documentation
+theme:
+  name: material
+  palette:
+    primary: teal
+    accent: orange
+nav:
+  - Home: index.md
+  - Getting started: getting-started.md
+  - Using your own data: using-your-own-data.md
+  - Data format: data-format.md
+  - Preprocessing: preprocessing.md
+  - Feature extraction: feature-extraction.md
+  - Published models: published-models.md
+  - Prediction modes: prediction-modes.md
+  - Training alternative models: training-custom-models.md
+  - Evaluation: evaluation.md
+  - Model reproduction: model-reproduction.md
+  - Quality control: quality-control.md
+  - API reference: api-reference.md
+  - Troubleshooting: troubleshooting.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            show_source: true
+            docstring_style: numpy
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true

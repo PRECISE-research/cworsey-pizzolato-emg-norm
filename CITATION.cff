@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software or dataset, please cite the associated manuscript and repository."
+title: "Carrall-Worsey-Pizzolato EMG normalisation"
+type: software
+authors:
+  - family-names: "Carrall-Worsey"
+    given-names: "Matthew"
+  - family-names: "Pizzolato"
+    given-names: "Claudio"
+repository-code: "https://github.com/PRECISE-research/carrall-worsey-pizzolato-emg-normalisation"
+license: "Apache-2.0"
+version: "0.1.0"
+date-released: "2026-07-31"
+keywords:
+  - electromyography
+  - normalisation
+  - kernel density estimation
+  - biomechanics

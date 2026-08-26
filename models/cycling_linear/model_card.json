@@ -1,0 +1,35 @@
+{
+  "name": "cycling-cohort side-pooled linear EMG amplitude models",
+  "version": "1.0.0",
+  "participants": [
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06",
+    "C07"
+  ],
+  "model_scope": "side_pooled_anatomical_muscle",
+  "input_unit": "input_referred_mV",
+  "feature_units": {
+    "variance_mV2": "mV^2",
+    "kde_fwhm_mV": "mV"
+  },
+  "target": "reference-normalised envelope at window centre",
+  "output_bounds": [
+    0.0,
+    1.0
+  ],
+  "training_trials": "17 cycling conditions plus three cycling-cohort CMJ trials",
+  "external_dataset_in_training": false,
+  "post_processing": "trial peak scales conventional 6-Hz envelope",
+  "prediction_floor_subtraction": false,
+  "conventional_envelope_floor_subtraction": false,
+  "intended_use": "Research prediction of a normalised EMG amplitude scale",
+  "limitations": [
+    "Requires compatible input-referred mV preprocessing",
+    "Developed from seven cycling participants",
+    "Not a physiological gold standard"
+  ]
+}

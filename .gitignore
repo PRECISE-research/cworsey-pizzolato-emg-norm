@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+.ipynb_checkpoints/
+site/
+outputs/
+data/derived/rebuilt/
+*.tmp
+~$*
+
+# The private source-to-public participant mapping is deliberately untracked.
+participant_identity_mapping.*
+scripts/private_*
