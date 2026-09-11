@@ -1,0 +1,53 @@
+name: Bug report
+description: Something in the package, CLI, or examples does not behave as documented.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please check [docs/troubleshooting.md](https://github.com/PRECISE-research/cworsey-pizzolato-emg-norm/blob/main/docs/troubleshooting.md) first.
+
+        **Do not attach raw participant recordings or any identifying
+        information.** Use synthetic data or the bundled example trial to
+        demonstrate the problem.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you expected, and what occurred instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: The smallest command or snippet that shows the problem.
+      render: python
+    validations:
+      required: true
+  - type: textarea
+    id: traceback
+    attributes:
+      label: Full traceback or output
+      render: text
+  - type: input
+    id: version
+    attributes:
+      label: Package version
+      description: "Output of: python -c \"import emg_normalisation; print(emg_normalisation.__version__)\""
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Python version and operating system
+      placeholder: "3.11 on Windows 11"
+    validations:
+      required: true
+  - type: checkboxes
+    id: data
+    attributes:
+      label: Confirmation
+      options:
+        - label: This report contains no participant-identifying information or raw recordings.
+          required: true

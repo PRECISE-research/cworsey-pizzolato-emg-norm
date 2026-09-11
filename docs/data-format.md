@@ -69,3 +69,29 @@ and the raw signal files are not included.
 `data/manifests` records trial roles, checksums, reference maxima, calibration,
 cadence mapping, and exclusions. These concise files are retained as
 analysis-definition metadata.
+
+### Which trial file to read
+
+Two files describe the same 246 trials, and they are not interchangeable.
+
+| File | Scope | Read it for |
+|---|---|---|
+| `trial_roles.csv` | Full role table, 12 columns | Dataset assembly. This is the file the package reads (`emg_normalisation.dataset`) |
+| `trial_manifest.csv` | Condensed summary, 7 columns | A quick inventory of participants, trials, and top-level inclusion flags |
+
+`trial_roles.csv` is authoritative. Where the two overlap, these column names
+correspond:
+
+| `trial_manifest.csv` | `trial_roles.csv` |
+|---|---|
+| `include_reference_normalisation` | `include_reference` |
+| `include_model_training` | `include_training` |
+| `external_primary_evaluation` | `nl_external_evaluation` |
+
+Those three agree row-for-row across all 246 trials.
+
+The two files also use different vocabularies for the `E01` trial roles:
+`trial_manifest.csv` uses `external_dynamic_reference` and
+`external_mvic_reference` where `trial_roles.csv` uses
+`nl_dynamic_augmentation` and `nl_mvic_augmentation`. These name the same 106
+rows. No `C01`-`C07` trial role differs between the files.

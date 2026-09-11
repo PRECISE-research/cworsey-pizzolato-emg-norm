@@ -189,7 +189,7 @@ model. See [Model reproduction](docs/model-reproduction.md).
 Install and serve the complete documentation site:
 
 ```bash
-pip install -e .[docs]
+pip install -e ".[docs]"
 mkdocs serve
 ```
 
@@ -200,7 +200,7 @@ Start with [Getting started](docs/getting-started.md), then see the
 ## Testing
 
 ```bash
-pip install -e .[dev]
+pip install -e ".[dev]"
 pytest
 mkdocs build --strict
 ```
@@ -210,8 +210,8 @@ remain an explicit Git LFS download.
 
 ## Data governance
 
-The code is Apache-2.0 licensed. The bundled real-data example, deidentified
-feature cache are subject to the research-use conditions in
+The code is Apache-2.0 licensed. The bundled real-data example and the
+deidentified feature cache are subject to the research-use conditions in
 [DATA_USE.md](DATA_USE.md). Confirm institutional requirements before using
 human-derived data.
 
