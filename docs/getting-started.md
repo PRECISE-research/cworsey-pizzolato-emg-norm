@@ -3,8 +3,8 @@
 ## Install
 
 ```bash
-git clone https://github.com/PRECISE-research/carrall-worsey-pizzolato-emg-normalisation.git
-cd carrall-worsey-pizzolato-emg-normalisation
+git clone https://github.com/PRECISE-research/CWPEmgNormalisation.git
+cd CWPEmgNormalisation
 git lfs pull --include="examples/full_trial_data/**,data/derived/window_features.parquet"
 python -m venv .venv
 .venv\Scripts\activate

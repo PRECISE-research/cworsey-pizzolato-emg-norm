@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this software or dataset, please cite the associated manuscript and repository."
+message: "If you use this software or dataset, please cite the preferred citation below and this repository."
 title: "Carrall-Worsey-Pizzolato EMG normalisation"
 type: software
 authors:
@@ -7,7 +7,7 @@ authors:
     given-names: "Matthew"
   - family-names: "Pizzolato"
     given-names: "Claudio"
-repository-code: "https://github.com/PRECISE-research/carrall-worsey-pizzolato-emg-normalisation"
+repository-code: "https://github.com/PRECISE-research/CWPEmgNormalisation"
 license: "Apache-2.0"
 version: "0.1.0"
 date-released: "2026-07-31"
@@ -16,3 +16,15 @@ keywords:
   - normalisation
   - kernel density estimation
   - biomechanics
+preferred-citation:
+  type: article
+  title: "Normalising electromyograms without maximal voluntary contractions"
+  authors:
+    - family-names: "Carrall-Worsey"
+      given-names: "Matthew"
+    - family-names: "Pizzolato"
+      given-names: "Claudio"
+  journal: "Research Square"
+  date-published: 2026-09-10
+  doi: "10.21203/rs.3.rs-10721340/v1"
+  url: "https://www.researchsquare.com/article/rs-10721340/v1"
