@@ -1,0 +1,33 @@
+name: Verify release integrity
+
+# Rebuilds the published linear models from the deidentified feature cache and
+# compares them parameter-by-parameter with the bundled bundle.
+#
+# Deliberately NOT run on push or pull_request: it pulls the 110 MB feature
+# cache from Git LFS, which consumes organisation LFS bandwidth on every run.
+# Run it manually before tagging a release, or when the model bundle, the
+# feature cache, or the training code changes.
+
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - run: git lfs pull --include="examples/full_trial_data/**,data/derived/window_features.parquet"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -e ".[dev]"
+      - name: Rebuild published models and compare with bundled bundle
+        run: python scripts/verify_release.py

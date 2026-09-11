@@ -1,5 +1,9 @@
 site_name: Carrall-Worsey-Pizzolato EMG normalisation
 site_description: API and reproducibility documentation
+site_url: https://precise-research.github.io/cworsey-pizzolato-emg-norm/
+repo_url: https://github.com/PRECISE-research/cworsey-pizzolato-emg-norm
+repo_name: PRECISE-research/cworsey-pizzolato-emg-norm
+edit_uri: edit/main/docs/
 theme:
   name: material
   palette:

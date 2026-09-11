@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Data-protection or reidentification concern
+    url: https://github.com/PRECISE-research/cworsey-pizzolato-emg-norm/security/advisories/new
+    about: Report privately. Never open a public issue for a data concern.
+  - name: Documentation
+    url: https://github.com/PRECISE-research/cworsey-pizzolato-emg-norm/tree/main/docs
+    about: Method, data-format, and API documentation, including the troubleshooting guide.

@@ -18,4 +18,6 @@ Use of these human-derived data must remain consistent with Griffith University
 approvals 2023/444 and 2022/762 and the consent conditions applying to the
 source studies.
 
-Contact the repository maintainers for access or governance questions.
+For access or governance questions, open an issue on the
+[repository issue tracker](https://github.com/PRECISE-research/cworsey-pizzolato-emg-norm/issues).
+Do not include personal or identifying information in an issue.

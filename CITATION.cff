@@ -7,10 +7,10 @@ authors:
     given-names: "Matthew"
   - family-names: "Pizzolato"
     given-names: "Claudio"
-repository-code: "https://github.com/PRECISE-research/carrall-worsey-pizzolato-emg-normalisation"
+repository-code: "https://github.com/PRECISE-research/cworsey-pizzolato-emg-norm"
 license: "Apache-2.0"
-version: "0.1.0"
-date-released: "2026-07-31"
+version: "0.1.2"
+date-released: "2026-09-11"
 keywords:
   - electromyography
   - normalisation

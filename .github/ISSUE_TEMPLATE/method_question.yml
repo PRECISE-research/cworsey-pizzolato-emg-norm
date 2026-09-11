@@ -1,0 +1,28 @@
+name: Method or reproducibility question
+description: A question about the normalisation method, model provenance, or reproducing published results.
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For how the published models were produced, see
+        [models/cycling_linear/PROVENANCE.md](https://github.com/PRECISE-research/cworsey-pizzolato-emg-norm/blob/main/models/cycling_linear/PROVENANCE.md)
+        and [docs/model-reproduction.md](https://github.com/PRECISE-research/cworsey-pizzolato-emg-norm/blob/main/docs/model-reproduction.md).
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: What you have already tried
+      description: Relevant documentation you have read, or commands you have run.
+  - type: checkboxes
+    id: data
+    attributes:
+      label: Confirmation
+      options:
+        - label: This question contains no participant-identifying information.
+          required: true
