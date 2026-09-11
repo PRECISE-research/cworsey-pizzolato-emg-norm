@@ -6,9 +6,12 @@ import json
 import pickle
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Protocol, Self, runtime_checkable
+from typing import TYPE_CHECKING, Any, Protocol, runtime_checkable
 
 import numpy as np
+
+if TYPE_CHECKING:  # pragma: no cover - typing.Self requires Python 3.11
+    from typing import Self
 
 
 @runtime_checkable
