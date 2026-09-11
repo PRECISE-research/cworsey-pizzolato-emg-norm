@@ -18,6 +18,7 @@ Use of these human-derived data must remain consistent with Griffith University
 approvals 2023/444 and 2022/762 and the consent conditions applying to the
 source studies.
 
-Contact the repository maintainers for access or governance questions. Do not
-raise a concern about participant privacy or reidentification in a public issue,
-and do not include personal or identifying information in one.
+Contact the repository maintainers for access or governance questions. Raise any
+concern about participant privacy or reidentification through the private route
+in [SECURITY.md](SECURITY.md), never in a public issue, and do not include
+personal or identifying information in a report.
