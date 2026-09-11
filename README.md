@@ -1,6 +1,6 @@
 # Carrall-Worsey-Pizzolato EMG normalisation
 
-[![CI](https://github.com/PRECISE-research/CWPEmgNormalisation/actions/workflows/ci.yml/badge.svg)](https://github.com/PRECISE-research/CWPEmgNormalisation/actions/workflows/ci.yml)
+[![CI](https://github.com/PRECISE-research/carrall-worsey-pizzolato-emg-normalisation/actions/workflows/ci.yml/badge.svg)](https://github.com/PRECISE-research/carrall-worsey-pizzolato-emg-normalisation/actions/workflows/ci.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/Code%20license-Apache--2.0-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-teal.svg)](pyproject.toml)
 
@@ -37,8 +37,8 @@ no identifying information or raw EMG samples.
 ## Installation
 
 ```bash
-git clone https://github.com/PRECISE-research/CWPEmgNormalisation.git
-cd CWPEmgNormalisation
+git clone https://github.com/PRECISE-research/carrall-worsey-pizzolato-emg-normalisation.git
+cd carrall-worsey-pizzolato-emg-normalisation
 git lfs pull --include="examples/full_trial_data/**,data/derived/window_features.parquet"
 python -m venv .venv
 .venv\Scripts\activate
