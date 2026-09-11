@@ -3,9 +3,7 @@
 Contributions that improve reproducibility, documentation, tests, or
 model-benchmark interfaces are welcome.
 
-By taking part you agree to the [code of conduct](CODE_OF_CONDUCT.md). To report
-a vulnerability or a data-protection concern privately, follow
-[SECURITY.md](SECURITY.md) rather than opening an issue.
+By taking part you agree to the [code of conduct](CODE_OF_CONDUCT.md).
 
 1. Create a branch from `main`.
 2. Install development dependencies with `pip install -e ".[dev]"`.

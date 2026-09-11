@@ -24,8 +24,6 @@ expectations apply to everyone taking part:
 
 ## Reporting
 
-Report unacceptable behaviour to the maintainers through GitHub's private
-reporting workflow (**Security -> Report a vulnerability**), which is the only
-private channel attached to this repository. Reports are handled confidentially.
-Maintainers may remove comments, commits, issues, and pull requests that breach
-this code, and may block repeat offenders.
+Report unacceptable behaviour to the repository maintainers. Reports are handled
+confidentially. Maintainers may remove comments, commits, issues, and pull
+requests that breach this code, and may block repeat offenders.
